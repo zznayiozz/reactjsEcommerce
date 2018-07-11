@@ -2,6 +2,10 @@
     right: 15px;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .position-top {
     top: 0;
 }
@@ -16,6 +20,22 @@
 
 .position-right {
     right: 0;
+}
+
+.position-top-15 {
+    top: 15px;
+}
+
+.position-bottom-15 {
+    bottom: 15px;
+}
+
+.position-left-15 {
+    left: 15px;
+}
+
+.position-right-15 {
+    right: 15px;
 }
 
 .position-center-x {
@@ -42,9 +62,9 @@
 }
 
 a:hover {
-    color:#17a2b8!important;
+  
     text-decoration: none;
-}
+} 
 
 .wc-20 {
     width: 20px;
@@ -84,3 +104,79 @@ a:hover {
 
 .z-index-100 { z-index: 100; }
 .z-index-200 { z-index: 200; }
+
+.boxProduct {
+    overflow: hidden;
+}
+
+.boxProduct:hover .buttonCart {
+    transition: all .4s ease 0s;
+    bottom: 0;
+    z-index: 200;
+}
+
+.boxProduct::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(000, 000, 000, .5);
+    opacity: 0;
+    transition: all .4s ease 0s;
+}
+
+.boxProduct:hover::after {
+    opacity: 1;
+    transition: all .4s ease 0s;
+}
+
+.buttonCart {
+    position: absolute;
+    transition: all .4s ease 0s;
+    bottom: -65px;
+}
+
+.wishlist {
+    transition: all .4s ease 0s;
+    transform: scale(0)
+}
+
+.boxProduct:hover .wishlist {
+    transition: all .4s ease 0s;
+    transform: scale(1)
+}
+
+.d-show { display: none}
+.d-hide { display: block; }
+.wishlist a:hover > .d-show {  
+     display: block;
+}
+
+.wishlist a:hover > .d-hide { 
+    display: none;
+}
+
+.popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(000, 000, 000, .5);
+    transform: scale(0);
+}
+
+.content {
+    transition: all .4s ease 0s;
+    transform: scale(0)
+}
+
+.font-size-84 {
+    font-size: 84px;
+}
