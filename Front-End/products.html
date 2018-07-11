@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="fontAwesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body class="bg-light">
+    <!-- fixed top -->
+    <div class="alert alert-info bg-danger show m-0 text-center border-0 rounded-0" role="alert">
+        <strong class="text-white">20% off everything!</strong>
+        <a href="#" class="text-white font-italic">Shop Now</a>
+        <button type="button" class="close text-muted" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <div class="bg-white d-flex align-items-center py-2">
+        <div class="topbar-social mr-auto ml-3">
+            <a href="#" class="m-2 text-muted">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="m-2 text-muted">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <h1 class="m-auto">LOGO</h1>
+        <div class="shoppingCart ml-auto mr-3">
+            <i class="far fa-user-circle text-muted m-2"></i>
+            <i class="fas fa-shopping-cart text-muted m-2"></i>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav d-flex w-100 justify-content-center font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link active disabled" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-3 sidebar">
+                <div class="row Categories">
+                    <div class="col-sm-12">
+                        <h3 class="font-weight-bold">Categories</h3>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <ul class="pl-3 list-style-none">
+                            <li class="my-2">
+                                <a href="#" class="text-muted">All</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="#" class="text-muted">Women</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="#" class="text-muted">Men</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="#" class="text-muted">Kids</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="#" class="text-muted">Accesories</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row Filters">
+                    <div class="col-sm-12">
+                        <h3 class="font-weight-bold">Filters</h3>
+                    </div>
+                    <div class="col-sm-12 border border-bottom-0 border-left-0 border-right-0 py-3">
+                        <h4>Price</h4>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 border border-bottom-0 border-left-0 border-right-0 py-3">
+                        <h4>Color</h4>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="position-relative m-1 wc-20 hc-20 checkbox">
+                                    <input type="checkbox" name="radio-stacked" class="position-absolute z-index-200 wc-20 hc-20 opacity-0">
+                                    <label class="bgInfo wc-20 hc-20 radius-circle"></label>
+                                    <i class="fas fa-check text-white position-absolute z-index-100 position-center font-size-12 opacity-0 iconCheck"></i>
+                                </div>
+                                <div class="position-relative m-1 wc-20 hc-20 checkbox">
+                                    <input type="checkbox" name="radio-stacked" class="position-absolute z-index-200 wc-20 hc-20 opacity-0">
+                                    <label class="bgPrimary wc-20 hc-20 radius-circle"></label>
+                                    <i class="fas fa-check text-white position-absolute z-index-100 position-center font-size-12 opacity-0 iconCheck"></i>
+                                </div>
+                                <div class="position-relative m-1 wc-20 hc-20 checkbox">
+                                    <input type="checkbox" name="radio-stacked" class="position-absolute z-index-200 wc-20 hc-20 opacity-0">
+                                    <label class="bgDanger wc-20 hc-20 radius-circle"></label>
+                                    <i class="fas fa-check text-white position-absolute z-index-100 position-center font-size-12 opacity-0 iconCheck"></i>
+                                </div>
+                                <div class="position-relative m-1 wc-20 hc-20 checkbox">
+                                    <input type="checkbox" name="radio-stacked" class="position-absolute z-index-200 wc-20 hc-20 opacity-0">
+                                    <label class="bgWarning wc-20 hc-20 radius-circle"></label>
+                                    <i class="fas fa-check text-white position-absolute z-index-100 position-center font-size-12 opacity-0 iconCheck"></i>
+                                </div>
+                                <div class="position-relative m-1 wc-20 hc-20 checkbox">
+                                    <input type="checkbox" name="radio-stacked" class="position-absolute z-index-200 wc-20 hc-20 opacity-0">
+                                    <label class="bgDark wc-20 hc-20 radius-circle"></label>
+                                    <i class="fas fa-check text-white position-absolute z-index-100 position-center font-size-12 opacity-0 iconCheck"></i>
+                                </div>
+                                <div class="position-relative m-1 wc-20 hc-20 checkbox">
+                                    <input type="checkbox" name="radio-stacked" class="position-absolute z-index-200 wc-20 hc-20 opacity-0">
+                                    <label class="bgSecondary wc-20 hc-20 radius-circle"></label>
+                                    <i class="fas fa-check text-white position-absolute z-index-100 position-center font-size-12 opacity-0 iconCheck"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 border border-bottom-0 border-left-0 border-right-0 py-3">
+                        <h4>Search Product</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="search product..." aria-describedby="inputGroupPrepend">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-9 main">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <select class="form-control form-control-lg" id="inlineFormCustomSelectPref">
+                            <option selected>Default sorting</option>
+                            <option value="1">Popularity</option>
+                            <option value="2">Price: low to high</option>
+                            <option value="3">Price: high to low</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-control form-control-lg" id="inlineFormCustomSelectPref">
+                            <option selected>Price</option>
+                            <option value="1">$0.00 - $50.00</option>
+                            <option value="2">$50.00 - $100.00</option>
+                            <option value="3">$100.00 - $150.00</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-end align-items-center">
+                        <p class="text-muted mb-0">Showing 1–12 of 16 results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container-fluid">
+            <div class="row  d-flex justify-content-center align-items-start">
+                <div class="col-sm-4">
+                    <h2> GET IN TOUCH</h2>
+                    <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1)
+                        96 716 6879</p>
+                </div>
+
+                <div class="col-sm-4 d-flex flex-column justify-content-center">
+                    <h2 class="text-center">CATEGORIES</h2>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#BestSeller">Best Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#Featured">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#Sale">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#TopRate">Top Rate</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 align-self-center">
+                    <p class="text-muted text-center">Copyright © 2018 All rights reserved. | This template is made with by Colorlib</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Tab Navi -->
+<script>
+    $(document).ready(function () {
+        $('.productGroup .containerPro:not(:first)').hide();
+
+        $('.buttonProduct li').click(function () {
+            var indexbutton = $(this).index();
+            $('.productGroup .containerPro').hide();
+            $('.productGroup .containerPro:eq(' + indexbutton + ')').fadeIn();
+
+        })
+    })
+</script>
+
+</html>

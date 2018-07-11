@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="fontAwesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body class="bg-light">
+    <!-- fixed top -->
+    <div class="alert alert-info bg-danger show m-0 text-center border-0 rounded-0" role="alert">
+        <strong class="text-white">20% off everything!</strong>
+        <a href="#" class="text-white font-italic">Shop Now</a>
+        <button type="button" class="close text-muted" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <div class="bg-white d-flex align-items-center py-2">
+        <div class="topbar-social mr-auto ml-3">
+            <a href="#" class="m-2 text-muted">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="m-2 text-muted">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <h1 class="m-auto">LOGO</h1>
+        <div class="shoppingCart ml-auto mr-3">
+            <i class="far fa-user-circle text-muted m-2"></i>
+            <i class="fas fa-shopping-cart text-muted m-2"></i>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav d-flex w-100 justify-content-center font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link active disabled" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Slider -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/bg-banner-01.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/bg-banner-02.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/bg-banner-01.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Banner -->
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card position-relative">
+                    <img class="card-img-top" src="images/banner-03.jpg" alt="Card image cap">
+                    <button type="button" class="btn btn-light btn-lg position-absolute w-50 position-bottom position-center-x mb-3 rounded-0">
+                        SUNGLASSES
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card position-relative">
+                    <img class="card-img-top" src="images/banner-03.jpg" alt="Card image cap">
+                    <button type="button" class="btn btn-light btn-lg position-absolute w-50 position-bottom position-center-x mb-3 rounded-0">
+                        SUNGLASSES
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card position-relative">
+                    <img class="card-img-top" src="images/banner-03.jpg" alt="Card image cap">
+                    <button type="button" class="btn btn-light btn-lg position-absolute w-50 position-bottom position-center-x mb-3 rounded-0">
+                        SUNGLASSES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our product -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2>OUR PRODUCTS</h2>
+                <ul class="nav justify-content-center my-4 buttonProduct">
+                    <li class="nav-item">
+                        <a class="nav-link active text-info" href="#BestSeller">Best Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="#Featured">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="#Sale">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="#TopRate">Top Rate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="productGroup">
+                <div class="row BestSeller containerPro">
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">New</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">New</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-danger position-absolute position-top text-white py-1 px-2 rounded">Sale</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">New</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row Featured containerPro">
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">Featured</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">New</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-danger position-absolute position-top text-white py-1 px-2 rounded">Sale</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">New</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row Sale containerPro">
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">Sale</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">New</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-danger position-absolute position-top text-white py-1 px-2 rounded">Sale</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">New</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row TopRate containerPro">
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">TopRate</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">New</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-danger position-absolute position-top text-white py-1 px-2 rounded">Sale</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card position-relative">
+                            <img class="card-img-top" src="images/item-01.jpg" alt="Card image cap">
+                            <p class="bg-info position-absolute position-top text-white py-1 px-2 rounded">New</p>
+                            <button type="button" class="btn btn-dark btn-lg position-absolute position-bottom position-center-x mb-3">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner video -->
+    <div class="barnerVideo bg-info d-flex justify-content-center align-items-center">
+        <div class="text-center text-white">
+            <h4>The Beauty</h4>
+            <h2>LOOKBOOK</h2>
+            <p>
+                <a href="#" class=" text-white">
+                    <i class="fas fa-play"></i> PLAY VIDEO</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="container my-5">
+        <div class="row my-4">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <h2 class="">OUR BLOG</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/blog-01.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/blog-01.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/blog-01.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container-fluid">
+            <div class="row  d-flex justify-content-center align-items-start">
+                <div class="col-sm-4">
+                    <h2> GET IN TOUCH</h2>
+                    <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1)
+                        96 716 6879</p>
+                </div>
+
+                <div class="col-sm-4 d-flex flex-column justify-content-center">
+                    <h2 class="text-center">CATEGORIES</h2>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#BestSeller">Best Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#Featured">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#Sale">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#TopRate">Top Rate</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 align-self-center">
+                    <p class="text-muted text-center">Copyright © 2018 All rights reserved. | This template is made with  by Colorlib</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Tab Navi -->
+<script>
+    $(document).ready(function () {
+        $('.productGroup .containerPro:not(:first)').hide();
+
+
+        $('.buttonProduct li').click(function () {
+            var indexbutton = $(this).index();
+            $('.productGroup .containerPro').hide();
+            $('.productGroup .containerPro:eq(' + indexbutton + ')').fadeIn();
+
+        })
+    })
+</script>
+
+</html>
